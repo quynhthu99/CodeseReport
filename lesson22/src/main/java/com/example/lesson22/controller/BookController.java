@@ -6,6 +6,8 @@ import com.example.lesson22.service.AuthorService;
 import com.example.lesson22.service.BookService;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 public class BookController {
     private final BookService bookService;
@@ -22,22 +24,21 @@ public class BookController {
         return bookService.addBook(bookWithAuthor.getBook(), bookWithAuthor.getId());
     }
 
-//    @RequestMapping(value = "/update-book", method = RequestMethod.PUT)
-//    public Book updateBook(@RequestBody Book book) {
-//        if (bookRepository.findById(book.getId()).isPresent()) {
-//            return bookRepository.save(book);
-//        }
-//        return null;
-//
-//    }
-//
-//    public void deleteBook(long id) {
-//        bookRepository.deleteById(id);
-//    }
-//
-//    public List<Book> getAllBooks() {
-//        return bookRepository.findAll();
-//    }
+    @RequestMapping(value = "/update-book", method = RequestMethod.PUT)
+    public Book updateBook(@RequestBody BookWithAuthor bookWithAuthor) {
+
+        return bookService.updateBook(bookWithAuthor.getBook(),bookWithAuthor.getId());
+
+    }
+@RequestMapping(value = "/delete-book", method = RequestMethod.DELETE)
+    public void deleteBook(@RequestParam(value = "id")  long id) {
+        bookService.deleteBook(id);
+    }
+
+    @RequestMapping(value = "/get-all-book",method = RequestMethod.GET)
+    public List<Book> getAllBooks() {
+        return bookService.getAllBooks();
+    }
 
 }
 
