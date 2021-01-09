@@ -1,0 +1,31 @@
+em sẽ push file này lên git 
+ bt neu chi lam thi no co luu o day luon k
+mà từ từ chị dùng intelliJ đúng không
+thế chị có muốn push luôn bằng intelliJ không đỡ phải push kiểu này
+
+day chi ca 2 cach di 
+chờ e 10 giây rep tn đã
+ok
+ok giờ chỉ
+có 2 kiểu push
+1. thủ công clone về rồi chạy lệnh trên git bash (chắc chắn chị không thích cách này vì phải nhớ lệnh)
+- lên git copy link về vd: 
+bên trái là các repo để chị push chị chọn một repo mà chị muốn push lên rồi ấn vào rồi lấy link
+cóp song thì vào một mục nào đó ( nào cũng đc rồi chuột phải chọn git bash )
+gõ lệnh git clone <link vừa cop về> -.-
+là nó sẽ tạo cho một file như e vừa làm. tại desktop cũng đc đó thấy chưa
+ok
+làm lại nhé sai mẹ nó rồi không có <> hờn. shift enter cho nhanh nhé nhầm shift insert hehe
+lại đi
+ok
+ok ngon giờ và push cái gì thì cho vào đấy vd push file này nhé =)) nhớ phải đúng trong file clone về mới push đc
+chi hoi cai
+bt y 
+chị làm thì hay lưu nó trong file có git rồi chị cứ vào file đấy push chứ k cần cop đi đâu.
+cũng đc cơ mà nếu gặp lỗi thì tốt nhất là clone lại là không hay gặp lỗi nhất
+ok
+ok thế cách này thoy nhá
+các lệnh sau đấy là:
+git add . (cài này là nó add toàn bộ các file luôn. chị tự tìm hiểu )l
+chị nhớ rùi để  
+từ từ cho file này vào
